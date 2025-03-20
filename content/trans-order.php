@@ -19,7 +19,7 @@ if (isset($_GET['delete'])) {
             </div>
             <div class="card-body">
                 <div align="right" class="mb-3">
-                    <a href="?page=add-trans-order" class="btn btn-primary">Create New Order</a>
+                    <a href="?page=add-trans-order" class="btn btn-primary">Create Order</a>
                 </div>
                 <table class="table table-bordered text-center">
                     <thead> 

@@ -44,7 +44,7 @@
               </a>
               <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                   <li>
-                      <a href="?pg=trans-order">
+                      <a href="?page=trans-order">
                           <i class="bi bi-circle"></i><span>Data Transaction</span>
                       </a>
                   </li>

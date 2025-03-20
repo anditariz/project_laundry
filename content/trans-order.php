@@ -1,6 +1,6 @@
 <?php
 
-$query = mysqli_query($conn, "SELECT trans_order. * , customers.costumer_name FROM trans_order LEFT JOIN customers ON customers.id = trans_order.id_customer WHERE deleted_at = 0 ORDER BY trans_order.id DESC");
+$query = mysqli_query($conn, "SELECT trans_order. * , customers.customer_name FROM trans_order LEFT JOIN customers ON customers.id = trans_order.id_customer WHERE deleted_at = 0 ORDER BY trans_order.id DESC");
 $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
 
 if (isset($_GET['delete'])) {
@@ -19,10 +19,10 @@ if (isset($_GET['delete'])) {
             </div>
             <div class="card-body">
                 <div align="right" class="mb-3">
-                    <a href="?page=add-user" class="btn btn-primary">Create New Order</a>
+                    <a href="?page=add-trans-order" class="btn btn-primary">Create New Order</a>
                 </div>
                 <table class="table table-bordered text-center">
-                    <thead>
+                    <thead> 
                         <tr>
                             <th>No</th>
                             <th>Trans Code</th>
